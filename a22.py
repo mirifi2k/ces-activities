@@ -21,7 +21,9 @@ try:
 
 	# split paths and remove last path which is invalid
 	files_paths = files.splitlines()
-	files_paths = files_paths[:-1]
+
+	if len(files_paths) > 0:
+		files_paths = files_paths[:-1]
 
 	print('Work is in progress ...')
 
